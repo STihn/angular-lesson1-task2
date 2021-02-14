@@ -1,1 +1,8 @@
+<h1>{{param1}}</h1>
 <app-mod1 [param1]="'hello world'" (event1)="con($event)"></app-mod1>
+<hr />
+<input type="text" (input)="onInput($event)">
+<p>input: {{inputValue}}</p>
+<hr>
+<input type="text" (keydown)="onKeyDown($event)">
+<p>input2: {{inputValue2}}</p>
