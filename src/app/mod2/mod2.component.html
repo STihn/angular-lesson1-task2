@@ -1,1 +1,22 @@
-<p>mod2 works!</p>
+<h1>mod2 works!</h1>
+<p>{{param | lowercase}}</p>
+<p>{{param | uppercase}}</p>
+<p>{{paramDate| date:"dd.MM.YYYY"}}</p>
+<p>{{paramInt |number:'2.0-2'}}</p>
+<p [innerHTML]="paramHtml"></p>
+<p [innerText]="paramText"></p>
+
+<input type="text" (input)="onInput($event)">
+<input type="text" [(ngModel)]="param">
+
+<ul>
+  <li *ngFor="let color of colors" [style.color]="color">{{color}}</li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let color of colors" [ngStyle]="{color:color}">{{color}}</li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let color of colors" style.color="{{color}}">{{color}}</li>
+</ul>

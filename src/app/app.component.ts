@@ -10,6 +10,7 @@ export class AppComponent {
   param1 = 'angular hello';
   inputValue ='';
   inputValue2 ='';
+  inputValue3 ='hello friends';
 
   con(event: any) {
     console.log(event);

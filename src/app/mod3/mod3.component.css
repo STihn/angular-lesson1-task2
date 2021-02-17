@@ -1,0 +1,34 @@
+.wrap {
+ width: 100px;
+ height: 30px;
+ border: 1px solid black;
+ text-align: center;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.orange {
+  background-color: #ffa500;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.lightblue {
+  background-color: #42aaff;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.purple {
+  background-color: #8b00ff;
+}

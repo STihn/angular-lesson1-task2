@@ -1,9 +1,12 @@
-<!-- <h1>{{param1}}</h1>
+<h1>{{param1}}</h1>
 <app-mod1 [param1]="'hello world'" (event1)="con($event)"></app-mod1>
 <hr />
-<input type="text" (input)="onInput($event)">
+<input type="text" (input)="onInput($event)"/> <!--event binding -->
 <p>input: {{inputValue}}</p>
 <hr>
 <input type="text" (keydown)="onKeyDown($event)">
-<p>input2: {{inputValue2}}</p> -->
-<app-mod2></app-mod2>
+<p>input2: {{inputValue2}}</p>
+<input type="text" [(ngModel)]="inputValue3">
+<i>input3: {{inputValue3}}</i> <!--two way binding-->
+<!-- <app-mod2></app-mod2> -->
+<app-mod3></app-mod3>

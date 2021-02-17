@@ -1,0 +1,25 @@
+<h2>mod3 works!</h2>
+<button (click)="onHidden()" style="margin: 0 10px 10px 0;">скрыть таблицу</button><button (click)="onShow()">открыть таблицу</button>
+<table [style]="table">
+  <tr>
+    <td class="red wrap">{{red}}</td>
+  </tr>
+  <tr>
+    <td class="orange wrap">{{orange}}</td>
+  </tr>
+  <tr>
+    <td class="yellow wrap">{{yellow}}</td>
+  </tr>
+  <tr>
+    <td class="green wrap" [textContent]="green"></td>
+  </tr>
+  <tr>
+    <td class="lightblue wrap" [textContent]="lightblue"></td>
+  </tr>
+  <tr>
+    <td class="blue wrap" [textContent]="blue"></td>
+  </tr>
+  <tr>
+    <td class="purple wrap" [textContent]="purple"></td>
+  </tr>
+</table>
